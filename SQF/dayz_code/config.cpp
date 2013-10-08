@@ -15,7 +15,6 @@
 
 #include "Configs\basicdefines.hpp"
 #include "Configs\CfgNonAIVehicles.hpp"
-#include "Configs\RscDisplay\includes.hpp"
 
 class CfgPatches {
 	class dayz_code {
@@ -227,6 +226,8 @@ class RscStructuredTextGUI: RscStructuredText
 // #include "Configs\CfgWorlds.hpp"
 #include "Configs\cfgMoves.hpp"
 #include "Configs\rscTitles.hpp"
+
+#include "Configs\RscDisplay\includes.hpp"
 
 #include "Configs\safegui.hpp"
 #include "Configs\dialog.hpp"
