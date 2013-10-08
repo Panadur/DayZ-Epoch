@@ -33,10 +33,12 @@ class ItemSledge: ItemCore
 					"MeleeSledge"
 				};
 			};
+		/*
 		class MineOre
 		{
 			text="Mine Ore";
 			script="spawn player_mineOre;";
 		};
+		*/
 	};
 };
