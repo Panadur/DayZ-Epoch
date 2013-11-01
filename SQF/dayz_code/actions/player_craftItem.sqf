@@ -181,9 +181,11 @@ if (_canDo) then {
 								_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
 								_outputWeapons = [_selectedWeapon];
 								_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
-								_selectedRecipeOutput = [_selectedMag];
+								_selectedMag = [_selectedMag];
 								// exit loop
-								_craft_doLoop = false;
+								//_craft_doLoop = false;
+							} else {
+								_selectedMag = _selectedRecipeOutput;
 							};
 							{
 								player addWeapon _x; 
@@ -206,7 +208,7 @@ if (_canDo) then {
 								// sleep here 
 								sleep 1;
 	
-							} forEach _selectedRecipeOutput;
+							} forEach _selectedMag;
 						};
 						
 					} else {
